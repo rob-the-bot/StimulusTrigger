@@ -40,7 +40,7 @@ for movie_id=1:length(order)
     movies{movie_id} = movies{movie_id}.TempMovie;
     
     % The following 20 lines are pre-filling transition movies to our raw
-    % stimulus movies
+    % stimulus movies (can be removed if the stimulus background is constant)
     transition_movie = nan;
     if movie_id < length(order) % not the last movie
        if order{movie_id}(1) == 'B' && order{movie_id+1}(1) == 'B'
