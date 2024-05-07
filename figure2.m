@@ -1,3 +1,6 @@
+% Code for viewing the figure window on second display
+% adapted from https://www.mathworks.com/matlabcentral/answers/16663-is-it-possible-to-viewing-the-figure-window-on-second-display#answer_22491
+
 function FigHandle = figure2(varargin)
 MP = get(0, 'MonitorPositions');
 if size(MP, 1) == 1  % Single monitor
