@@ -3,9 +3,9 @@
 This repo hosts the code for displaying stimulus videos in MATLAB, and communicates with StreamPix through UDP trigger to start/end recording.
 
 ## Things to know
-1. The stimulus files should be in the format of 720x1280 logical arrays saved in `mat` forma, saved in the [Stim](Stim/) folder.
+1. The stimulus files should be in the format of 720x1280 logical arrays saved in `mat` format, saved in the [Stim](Stim/) folder.
 2. The stimuli are played at 30FPS.
-3. The order of the stimulus playback are governed by the launch file `stimulus_order.csv`.
+3. The order of the stimulus playback are governed by the launch file [`stimulus_order.csv`](stimulus_order.csv).
 4. Line 62 which sends trigger to StreamPix can be modified to
 
 ```MATLAB
